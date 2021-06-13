@@ -1,7 +1,9 @@
-/* Layoyt */
+/* Layout */
 
 body {
 	font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+	background-image: url(https://source.unsplash.com/collection/10560236/1980x1080/daily); 
+	background-size: cover;
 }
 
 html, body {
@@ -63,13 +65,13 @@ a:hover {
 }
 
 footer {
-	padding: 15px 0;
-	font-size: x-small;
-	text-align: center;
-	line-height: 150%;
-	background: #fff;
-	margin-top: -50px;
-	height: 20px;
+padding: 5px 0px 0px;
+    font-size: x-small;
+    text-align: center;
+    line-height: 1.3;
+    background: #ffffff3b;
+    margin-top: -30px;
+    height: 30px;
 }
 
 header {
