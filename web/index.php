@@ -39,7 +39,7 @@ else {
 
 # Execute routed handler
 $accept = explode(',', $_SERVER['HTTP_ACCEPT']);
-if ( $_POST['json'] == 'true' ) $renderer = 'json';
+if ( $_POST['json'] == 'true' || $_SERVER['HTTP_REFERER'] != "") $renderer = 'json';
 else if ( in_array('text/html', $accept) ) $renderer = 'html';
 else $renderer = 'txt';
 

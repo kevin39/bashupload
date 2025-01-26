@@ -7,10 +7,10 @@
 	<script src="/script.js?<?=STATIC_VERSION?>"></script>
 	
 	<?php if ( WEB ) { ?>
-  	<link rel="icon" href="/logo.png">
+  	<link rel="icon" href="https://labecot-fr.cdn.kelab.io/wp-content/uploads/2020/05/cropped-rs-kevin-labecot-trans-cercle-32x32.png">
   	<meta name="description" content="<?=$description ? : 'Upload files from command line to cloud and then download to desktop or server'?>">
   	<meta name="keywords" content="Upload from command line, upload using bash, upload file to server, download file from server">
-  	<meta name="author" content="zeroapps.dev">
+  	<meta name="author" content="kelab.io">
 	<?php } ?>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +20,9 @@
 	<div id="content">
 		<header>
 			<?php if ( $uri != '/' ) { ?>
-				<p>The <b><a href="/">bashupload</a></b> is a place to upload files from command line or other ways and download them elsewhere.
+				<p><b>KUP</b> (Kelab.io Upload) is a place to upload files from command line or other ways and download them elsewhere.
 			<?php } else { ?>
-				<h1>bashupload</h1>
+				<h1>KUP - Kelab.io Upload</h1>
 				<p>
 				  Upload files from command line to easily share between servers, desktops and mobiles, <?=file_upload_max_size()?> max.
 				  Files are stored for <?=EXPIRE_DAYS?> days<?=MAX_DOWNLOADS > 1 ? '' : ' and can be downloaded only once' ?>.
@@ -34,9 +34,9 @@
 	</div>
 
 	<footer>
-		by <a target="_blank" href="https://github.com/IO-Technologies">IO tech</a>
-		based on <a target="_blank" href="/disclaimer">terms & conditions</a>
+		Inspied from BashUpload by <a target="_blank" href="https://github.com/IO-Technologies">IO tech</a>.
 		<br/>
+		<a target="_blank" href="/disclaimer">terms & conditions</a> |
 		
 		report bugs, leave notes or help
 		<a href="https://github.com/denfromio/bashupload" target="_blank">on github</a>

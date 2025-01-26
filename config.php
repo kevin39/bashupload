@@ -17,10 +17,10 @@ define('STORAGE', '/var/files');
 define('FORCE_SSL', false);
 
 # How many days should we keep files?
-define('EXPIRE_DAYS', 30);
+define('EXPIRE_DAYS', 2);
 
 # How many downloads should we allow?
-define('MAX_DOWNLOADS', 10);
+define('MAX_DOWNLOADS', 2);
 
 # Our website host
 define('HOST', @$_SERVER['HTTP_HOST']);
