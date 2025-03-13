@@ -7,10 +7,10 @@
 	<script src="/script.js?<?=STATIC_VERSION?>"></script>
 	
 	<?php if ( WEB ) { ?>
-  	<link rel="icon" href="https://labecot-fr.cdn.kelab.io/wp-content/uploads/2020/05/cropped-rs-kevin-labecot-trans-cercle-32x32.png">
+  	<link rel="icon" href="https://www.arlian.fr/favicon-32x32.png"
   	<meta name="description" content="<?=$description ? : 'Upload files from command line to cloud and then download to desktop or server'?>">
   	<meta name="keywords" content="Upload from command line, upload using bash, upload file to server, download file from server">
-  	<meta name="author" content="kelab.io">
+  	<meta name="author" content="Arlian Service">
 	<?php } ?>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +20,12 @@
 	<div id="content">
 		<header>
 			<?php if ( $uri != '/' ) { ?>
-				<p><b>KUP</b> (Kelab.io Upload) is a place to upload files from command line or other ways and download them elsewhere.
+				<p><b>DL.Arlian.Tools</b> is a place to upload files from command line or other ways and download them elsewhere.
 			<?php } else { ?>
-				<h1>KUP - Kelab.io Upload</h1>
+				<h1>DL.Arlian.Tools</h1>
 				<p>
-				  Upload files from command line to easily share between servers, desktops and mobiles, <?=file_upload_max_size()?> max.
+				  Upload files from the command line or via the web for seamless sharing between servers, desktops, and mobile devices
+				  (<?=file_upload_max_size()?> max).
 				  Files are stored for <?=EXPIRE_DAYS?> days<?=MAX_DOWNLOADS > 1 ? '' : ' and can be downloaded only once' ?>.
 				</p>
 			<?php } ?>
@@ -34,7 +35,7 @@
 	</div>
 
 	<footer>
-		Inspied from BashUpload by <a target="_blank" href="https://github.com/IO-Technologies">IO tech</a>.
+		Inspired by an idea from <a target="_blank" href="https://github.com/IO-Technologies">IO tech</a>.
 		<br/>
 		<a target="_blank" href="/disclaimer">terms & conditions</a> |
 		

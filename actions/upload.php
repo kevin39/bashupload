@@ -2,8 +2,6 @@
 
 # Upload file(s) handler
 
-
-
 # First, let's check raw input data
 if ( $f = fopen('php://input', 'r') )
 {
@@ -39,7 +37,7 @@ foreach ( $_FILES as $key_file => $file )
 
   # move file to a final location
 	$destination = STORAGE . '/' . md5('/' . $id . '-' . $file['name']);
-	rename($file['tmp_name'], $destination);
+	move_uploaded_file($file['tmp_name'], $destination);
 
   # register this uploaded file data
 	$uploads[] = [

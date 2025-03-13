@@ -3,7 +3,6 @@
 # Upload file(s) handler
 
 
-
 # First, let's check raw input data
 if ( $f = fopen('php://input', 'r') )
 {
